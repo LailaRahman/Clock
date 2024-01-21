@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Quicksand:wght@300;400;500;700&family=Zeyada&display=swap');
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+body{
+  background: url(https://tse1.mm.bing.net/th?id=OIF.iojE2pLdMtQGMNMf%2fs05iw&rs=1&pid=ImgDetMain)no-repeat;
+  background-size: cover;
+ /* background: linear-gradient( to right, #0091ea, #673ab7);*/
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.clock{
+  width: 100%;
+  max-width: 400px;
+  height:24vh;
+  font-size: 3.5rem;
+  text-shadow: 0.25rem 0.25rem 0.6rem rgba(255, 255, 255, 0.1);
+  display: flex;
+  gap: 1.5rem;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1),0px 10px 20px rgba(0,0,0,0.7);
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.clock #ampm{
+  font-size: 1.6rem;
+  position: relative;
+  top: 5px;
+  left: -20px;
+  background-color: lightgray;
+  height: 7vh;
+  width: 100px;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+#seconds{
+  min-width: 5.5rem;
+}
+
+@media screen and (max-width:274px){
+  .clock{
+    max-width: 210px;
+    font-size: 1.5rem;
+  }
+  .clock #ampm{
+    font-size: 0.5rem;
+  }
+}
+
+@media screen and (min-width:275px) and (max-width:400px){
+  .clock{
+    max-width: 260px;
+    font-size: 1.7rem;
+  }
+  .clock #ampm{
+    font-size: 0.7rem;
+  }
+}
+
